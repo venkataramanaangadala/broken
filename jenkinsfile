@@ -12,6 +12,7 @@ pipeline
 	{
 	  venki.gitDownload("maven")
 	}
+
       }
     }
     stage('cont build_master')
@@ -22,7 +23,9 @@ pipeline
 	{
 	  venki.gitBuild()
 	}
+
       }
     }
+
   }
 }

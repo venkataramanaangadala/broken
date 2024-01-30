@@ -4,18 +4,7 @@ pipeline
   agent any
   stages
   {
-    stage('cont download_master')
-    {
-      steps
-      {
-        script
-	{
-	  venki.gitDownload("maven")
-	}
-
-      }
-    }
-    stage('cont build_master')
+    stage('cont download_loans')
     {
       steps
       {
@@ -23,9 +12,7 @@ pipeline
 	{
 	  venki.gitBuild()
 	}
-
       }
     }
-
   }
 }
